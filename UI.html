@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>One-Shot Diffusion Mimicker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Handwritten Text Generator</h1>
+    <div class="form-group">
+      <label for="templateImage">Upload Handwriting Template:</label>
+      <input type="file" id="templateImage" accept="image/*">
+    </div>
+    <div class="form-group">
+      <label for="inputText">Enter Text:</label>
+      <textarea id="inputText" placeholder="Type the text you want in handwritten style..."></textarea>
+    </div>
+    <button id="generateButton">Generate Handwritten Text</button>
+    <div id="loading" class="hidden">Generating... Please wait.</div>
+    <div id="output">
+      <h2>Generated Output:</h2>
+      <img id="outputImage" src="" alt="Generated Handwritten Text">
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
