@@ -1,0 +1,32 @@
+<html>
+<div style="text-align: center;">
+<head>
+    <title>技术详情</title>
+</head>
+<body>
+    <div style="color: yellow; font-size: 32px;">技术详情</div>
+
+    <input type="button" value="生成步骤" onclick="btn1()">
+    <input type="button" value="模型架构" onclick="btn2()">
+    <input type="button" value="数据集规模" onclick="btn3()">
+    
+    <div id="txt">这里是示例文字 1。</div><img src="image/sample1.png" alt="description" style="width: 40%" id="img">
+
+    <script>
+        function btn1() {
+            document.getElementById("img").src = "image/sample1.png";
+            document.getElementById("txt").innerHTML = "这里是示例文字 1。";
+        }
+        function btn2() {
+            document.getElementById("img").src = "image/sample2.png";
+            document.getElementById("txt").innerHTML = "这里是示例文字 2。";
+        }
+        function btn3() {
+            document.getElementById("img").src = "image/sample3.png";
+            document.getElementById("txt").innerHTML = "这里是示例文字 3。";
+        }
+    </script>
+
+</body>
+</div>
+</html>
